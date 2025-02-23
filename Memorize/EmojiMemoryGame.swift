@@ -28,8 +28,13 @@ class EmojiMemoryGame: ObservableObject {
         model.cards
     }
     
+    func choose(_ card: MemoryGame<String>.Card) {
+        model.choose(card)
+    }
+    
     func shuffle() {
         model.shuffle()
         print(model.cards)
     }
 }
+ 
